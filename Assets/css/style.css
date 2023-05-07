@@ -4,10 +4,10 @@
 
 /* brand color palette */
 :root {
-  --primary: rgba(68, 88, 119, 1);
+  --primary: rgb(163, 30, 224);
   --secondary: rgba(146, 204, 206, 1);
-  --tertiary: rgba(49, 52, 61, 1);
-  --dark: rgba(28, 29, 33, 1);
+  --tertiary: rgb(8, 3, 59);
+  --dark: rgb(22, 1, 39);
   --light: rgba(238, 238, 247, 1);
 }
 
@@ -16,7 +16,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: var(--primary);
-  background-color: var(--light);
+  background-color: var(--dark);
   line-height: 1.5;
 }
 
@@ -41,7 +41,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   background-color: var(--tertiary);
-  box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+  box-shadow: 0 5px 35px rgba(159, 146, 206, 0.4);
 }
 
 header h1 {
@@ -121,7 +121,7 @@ main {
 }
 
 .contact address a {
-  color: var(--tertiary);
+  color: var(--primary);
   padding: 5px;
   text-decoration: none;
   font-size: 1.3rem;
