@@ -70,6 +70,7 @@ main {
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
+  background-position-y;:;
   min-height: 30vh;
   color: var(--light);
   padding: 2% 6%;
