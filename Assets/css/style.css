@@ -57,6 +57,10 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+}
+nav > a{
+  padding: 0 1% 0 1%;
 }
 
 main {
@@ -66,17 +70,45 @@ main {
 
 .hero-banner {
   background: rgb(68, 88, 120);
-  background-image: url('../images/02-hero-bg.jpg'), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: url('../images/02-hero-bg-custom.jpg'), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
-  min-height: 30vh;
+  min-height: 15vh;
   color: var(--light);
   padding: 2% 6%;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
-  text-align: right;
+  align-items: center;
+  text-align: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.about{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.about h2 {
+  order: 5;
+  color: var(--light);
+  background-color:var(--dark);
+  border-radius: 15px;
+  padding: 5px 5px 5px 15px;
+  margin-bottom: 25px
+}
+.about p {
+  color: var(--light);
+  background-color:var(--dark);
+  border-radius: 15px;
+  padding: 5px 5px 5px 15px;
+  margin-bottom: 25px
+}
+.profile-pic {
+  border-radius: 50%;
+  transform: scale(30%);
 }
 
 .page-wrapper {
