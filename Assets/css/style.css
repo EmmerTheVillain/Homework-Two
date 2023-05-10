@@ -196,10 +196,6 @@ main {
 max-width: 90%;
 height: auto;
 border-radius: 25px;
-;
-}
-.portfolio-card p {
-
 }
 
 .contact address {
@@ -235,7 +231,7 @@ border-radius: 25px;
   flex-shrink: 2;
  }; 
  header nav{
-  order 1;
+  order: 1;
  }
  .main-card img{
   max-width: 90%;
