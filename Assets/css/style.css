@@ -4,11 +4,11 @@
 
 /* brand color palette */
 :root {
-  --primary: rgba(68, 88, 119, 1);
-  --secondary: rgba(146, 204, 206, 1);
-  --tertiary: rgba(49, 52, 61, 1);
-  --dark: rgba(28, 29, 33, 1);
-  --light: rgba(238, 238, 247, 1);
+  --primary: rgb(2, 59, 35);
+  --secondary: rgb(254, 255, 179);
+  --tertiary: rgb(66, 85, 69);
+  --dark: rgb(1, 29, 2);
+  --light: rgb(219, 219, 182);
 }
 
 body {
@@ -71,7 +71,7 @@ main {
 
 .hero-banner {
   background: rgb(68, 88, 120);
-  background-image: url('../images/02-hero-bg-custom.jpg'), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: url('../images/02-hero-bg-custom.jpg'), linear-gradient(180deg, var(--dark) 0%, var(--primary) 100%);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
@@ -128,7 +128,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content:space-around;
+  justify-content:flex-start;
 }
 
 .page-section > h2 {
@@ -141,15 +141,28 @@ main {
 }
 
 .page-section > div {
-  flex: 0 0 40%;
-}
-.page-section > article{
-  flex: 0 0 90%;
+  flex: 0 0 60%;
 }
 
 .page-section p {
   margin-bottom: 20px;
 }
+.page-section div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  flex: 1 1 40%;
+}
+.page-section div > .main-card{
+    flex-grow: 2;
+    flex-basis: 100%;
+}
+/* .portfolio div > .portfolio-card{
+  flex-basis: 50%;
+  align-items: stretch;
+} */
 
 .main-card{
   text-align: center;
@@ -157,28 +170,30 @@ main {
   border-color: var(--primary);
   border-radius: 25px;
   padding: 1%;
-  margin: 5% 0 75px 5% ;
+  margin: 5%;
 }
 .main-card img{
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   border-radius: 25px;
+  flex: 0 1 100%;
 }
-
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:flex-start;
+}
 .portfolio-card {
   border-style: solid;
   border-color: var(--primary);
   border-radius: 25px;
   padding: 1%;
   margin: 5% 0 0 5% ;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
 }
 
 .portfolio-card img{
-max-width: 75%;
+max-width: 90%;
 height: auto;
 border-radius: 25px;
 ;
