@@ -61,6 +61,7 @@ nav {
 }
 nav > a{
   padding: 0 1% 0 1%;
+  color: var(--light);
 }
 
 main {
@@ -106,9 +107,12 @@ main {
   padding: 5px 5px 5px 15px;
   margin-bottom: 25px
 }
-.profile-pic {
+.about img {
   border-radius: 50%;
-  transform: scale(30%);
+  max-width: 30%;
+  height: auto;
+  padding-right: 2%;
+  flex-shrink: 2;
 }
 
 .page-wrapper {
@@ -153,7 +157,7 @@ main {
   border-color: var(--primary);
   border-radius: 25px;
   padding: 1%;
-  margin: 5% 0 0 5% ;
+  margin: 5% 0 75px 5% ;
 }
 .main-card img{
   max-width: 50%;
@@ -209,4 +213,20 @@ border-radius: 25px;
 .contact address a:hover {
   background-size: 100% 88%;
   color: var(--secondary);
+}
+
+@media screen and (max-width: 768px) {
+ header h1{
+  flex-shrink: 2;
+ }; 
+ header nav{
+  order 1;
+ }
+ .main-card img{
+  max-width: 90%;
+  height: auto;
+ }
+ .page-section{
+  flex-direction: column;
+ }
 }
