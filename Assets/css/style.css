@@ -141,7 +141,7 @@ main {
 }
 
 .page-section > div {
-  flex: 0 0 60%;
+  flex: 0 0 80%;
 }
 
 .page-section p {
@@ -189,7 +189,7 @@ main {
   border-color: var(--primary);
   border-radius: 25px;
   padding: 1%;
-  margin: 5% 0 0 5% ;
+  margin: 5% 5% 0 5% ;
 }
 
 .portfolio-card img{
@@ -243,5 +243,12 @@ border-radius: 25px;
  }
  .page-section{
   flex-direction: column;
+ }
+ .portfolio{
+  flex-direction: column;
+ }
+ .portfolio-card img{
+  width: 60%;
+  height: auto;
  }
 }
