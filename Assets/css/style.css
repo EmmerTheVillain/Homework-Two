@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-/* brand color palette */
+/* set color variables */
 :root {
   --primary: rgb(2, 59, 35);
   --secondary: rgb(254, 255, 179);
@@ -10,7 +10,7 @@
   --dark: rgb(1, 29, 2);
   --light: rgb(219, 219, 182);
 }
-
+/* body style and font family */
 body {
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@ h6 {
 p {
   margin: 0;
 }
-
+/* header flex settings, style settings */
 header {
   padding: 15px 6% 15px 0;
   display: flex;
@@ -44,6 +44,7 @@ header {
   box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
 
+/* set h1 header style settings  */
 header h1 {
   color: var(--tertiary);
   background-color: var(--secondary);
@@ -52,23 +53,26 @@ header h1 {
   font-size: 4vw;
   line-height: 1;
 }
-
+/* flex settings for nav bar */
 nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
 }
+
+/* nav link style */
 nav > a{
   padding: 0 1% 0 1%;
   color: var(--light);
 }
-
+/* margins for main section */
 main {
   margin-top: 20px;
   margin-bottom: 45px;
 }
 
+/* banner image for about me section */
 .hero-banner {
   background: rgb(68, 88, 120);
   background-image: url('../images/02-hero-bg-custom.jpg'), linear-gradient(180deg, var(--dark) 0%, var(--primary) 100%);
@@ -86,12 +90,14 @@ main {
   flex-direction: row;
 }
 
+/* flex settings for about section */
 .about{
   display: flex;
   flex-direction: row;
   align-items: center;
 
 }
+/* about header style */
 .about h2 {
   order: 5;
   color: var(--light);
@@ -100,6 +106,7 @@ main {
   padding: 5px 5px 5px 15px;
   margin-bottom: 25px
 }
+/* about p style settings */
 .about p {
   color: var(--light);
   background-color:var(--dark);
@@ -107,6 +114,7 @@ main {
   padding: 5px 5px 5px 15px;
   margin-bottom: 25px
 }
+/* about pfp style and flex settings */
 .about img {
   border-radius: 50%;
   max-width: 30%;
@@ -115,12 +123,14 @@ main {
   flex-shrink: 2;
 }
 
+/* main section margin settings */
 .page-wrapper {
   max-width: 88%;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* flex settings for portfolio sidebar */
 .page-section {
   margin: 25px 0;
   padding: 10px 0;
@@ -131,6 +141,7 @@ main {
   justify-content:flex-start;
 }
 
+/* portfolio label header settings */
 .page-section > h2 {
   flex: 0 0 20%;
   text-align: right;
@@ -139,14 +150,15 @@ main {
   font-size: 4vw;
   line-height: 1.1;
 }
-
+/* flex settings for portfolio items */
 .page-section > div {
   flex: 0 0 80%;
 }
-
+/* spacing/margin for portfolio items */
 .page-section p {
   margin-bottom: 20px;
 }
+/* flex settings for portfolio cards */
 .page-section div{
   display: flex;
   flex-wrap: wrap;
@@ -155,15 +167,13 @@ main {
   height: 100%;
   flex: 1 1 40%;
 }
+/* resize flex setting for application card */
 .page-section div > .main-card{
     flex-grow: 2;
     flex-basis: 100%;
 }
-/* .portfolio div > .portfolio-card{
-  flex-basis: 50%;
-  align-items: stretch;
-} */
 
+/* application card style */
 .main-card{
   text-align: center;
   border-style: solid;
@@ -172,18 +182,22 @@ main {
   padding: 1%;
   margin: 5%;
 }
+/* img style for application card */
 .main-card img{
   max-width: 100%;
   height: auto;
   border-radius: 25px;
   flex: 0 1 100%;
 }
+/* flex settings for portfolio card content*/
 .portfolio{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content:flex-start;
 }
+
+/* style settings for portfolio cards */
 .portfolio-card {
   border-style: solid;
   border-color: var(--primary);
@@ -192,12 +206,14 @@ main {
   margin: 5% 5% 0 5% ;
 }
 
+/* img style for portfolio card */
 .portfolio-card img{
 max-width: 90%;
 height: auto;
 border-radius: 25px;
 }
 
+/* flex settings for contact section */
 .contact address {
   display: flex;
   flex-wrap: wrap;
@@ -206,6 +222,7 @@ border-radius: 25px;
   height: 100%;
 }
 
+/* link styling for contact links */
 .contact address a {
   color: var(--tertiary);
   padding: 5px;
@@ -221,11 +238,13 @@ border-radius: 25px;
   display: inline-block;
 }
 
+/* hover effect for link addresses */
 .contact address a:hover {
   background-size: 100% 88%;
   color: var(--secondary);
 }
 
+/* mobile screen resize settings */
 @media screen and (max-width: 768px) {
  header h1{
   flex-shrink: 2;
